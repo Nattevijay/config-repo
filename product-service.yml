@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/productdb
     username: root
-    password: 21082001@Vijay
+    password: {MYSQL_ROOT_PASSWORD}
 
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
