@@ -1,11 +1,24 @@
+# server:
+#     port: 8084
+
+# spring:
+#   datasource:
+#     url: jdbc:mysql://${DB_HOST:localhost}:3306/${DB_NAME:order_db}
+#     username: ${DB_USER:root}
+#     password: ${DB_PASSWORD:root}
+#     driver-class-name: com.mysql.cj.jdbc.Driver
+
+#   jpa:
+#     database-platform: org.hibernate.dialect.MySQLDialect
+#     hibernate:
+#       ddl-auto: update
+#     show-sql: true
+
 server:
-    port: 8084
+  port: 8084 # change to 8082 for user-service, 8083 for product-service
 
 spring:
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:3306/${DB_NAME:order_db}
-    username: ${DB_USER:root}
-    password: ${DB_PASSWORD:root}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
