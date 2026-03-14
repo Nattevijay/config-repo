@@ -18,6 +18,5 @@ spring:
               uri: lb://ORDER-SERVICE
               predicates: 
                 - Path=/api/orders/**
-sever:
-    port: 8080
+
 
